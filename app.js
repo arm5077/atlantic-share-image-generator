@@ -6,6 +6,7 @@ var colors = [
     'background-gradient-color': '#303045',
     'background-image': 'purple.png',
     color: 'rgba(255,255,255,1)',
+    'a-color': 'black',
     'a-opacity': .4
   },
   {
@@ -14,7 +15,17 @@ var colors = [
     'background-gradient-color': '#D6181F',
     'background-image': 'red.png',
     color: 'rgba(255,255,255,1)',
-    'a-opacity': .2
+    'a-color': '#280000',
+    'a-opacity': .1
+  },
+  {
+    name: 'tan',
+    'background-color': '#CCCBBC',
+    'background-gradient-color': '#B1AF9A',
+    'background-image': 'tan.png',
+    color: 'rgba(0,0,0,.9)',
+    'a-color': '#565922',
+    'a-opacity': .1
   }
 ]
 
@@ -34,8 +45,11 @@ colors.forEach(function(color){
       })
       
       $('.atlantic-a').css({
-        opacity: color['a-opacity']
+        opacity: color['a-opacity'],
+        fill: color['a-color']
       })
+      
+      $('.quoteBar').css('background-color', color.color)
     })
 })
 
@@ -56,8 +70,17 @@ $('#quote').on('change', function(){
     $('.content').addClass('quote')
   else
     $('.content').removeClass('quote')
-
 })
+
+// Add/remove subhed when users clicks 'subed'
+$('#subhed').on('change', function(){
+  if( $('#subhed').is(':checked') )
+    $('.subhed').show()
+  else
+    $('.subhed').hide()
+  reflow()
+})
+
 
 $('.download').click(function(){
   
@@ -84,8 +107,9 @@ function reflow(){
     $('.hidden-subhed').html('The dog had wearied of chasing foxes and resigned itself to inevitable sighs of disapproval from humans.')
   else
     $('.hidden-subhed').html( $('.subhed').val() );
-  
+
   $('.subhed').height( $('.hidden-subhed').height() );
+
   
   $('.content').css('top', ($('.card').height() - $('.content').height()) / 2 + 'px')
   
