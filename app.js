@@ -68,15 +68,6 @@ $('.download').click(function(){
     
 })
 
-domtoimage.toSvg( $('.card').get(0) )
-  .then(function(data){
-    var img = new Image();
-    img.src = data;
-    $('body').append(img)
-  })
-
-
-
 function reflow(){
   
   if( $('.title').val() == '' )
