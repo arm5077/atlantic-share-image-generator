@@ -1,7 +1,10 @@
-@import url(fonts/calibre.css);
-
 body {
   font-family: "Calibre", sans-serif;
+}
+
+.theWholeShebang {
+  margin: 20px auto;
+  width: 450px;
 }
 
 .card {
@@ -9,6 +12,7 @@ body {
   height: 235px;
   background-color: #424261;
   background: linear-gradient(-180deg, #424261 0%, #303045 100%);
+  background: url('png/purple.png') repeat;
   position: relative;
 }
 
@@ -66,7 +70,6 @@ body {
 }
 
 .download {
-  margin-top: 20px;
   border: 1px solid #333;
   padding: 10px 10px;
   display: inline-block;
@@ -75,6 +78,7 @@ body {
   font-family: Helvetica, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .atlantic-a {
@@ -88,3 +92,93 @@ body {
 #quote {
   margin-left: 20px;
 }
+
+.controlTray {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.colorTray, .quoteTray {
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+.colorBlock {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 5px;
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.colorBlock:hover {
+  border: 4px solid rgba(0,0,0,.2);
+}
+
+.quoteTray {
+  position: relative;
+  top: 7px;
+  margin-left: 0;
+}
+
+
+
+
+
+
+/* Font Annex, because dom-to-image won't let me embed elsewhere */
+@font-face {
+  font-family: 'Calibre';
+  src: url(fonts/Calibre-Regular/Calibre-Regular.eot); /* IE9 Compat Modes */
+  src: url(fonts/Calibre-Regular/Calibre-Regular.eot?#iefix) format('embedded-opentype'), 
+       url(fonts/Calibre-Regular/Calibre-Regular.woff) format('woff'), /* Modern Browsers */
+       url(fonts/Calibre-Regular/Calibre-Regular.ttf) format('truetype'), /* Safari, Android, iOS */
+       url(fonts/Calibre-Regular/Calibre-Regular.svg#Calibre-Regular) format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('fonts/Calibre-Regular/Calibre-Regular/Calibre-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Calibre-Regular/Calibre-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Calibre-Regular/Calibre-BoldItalic.woff') format('woff'), /* Modern Browsers */
+       url('fonts/Calibre-Regular/Calibre-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Calibre-Regular/Calibre-BoldItalic.svg#Calibre-BoldItalic') format('svg'); /* Legacy iOS */
+  font-style: italic;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('fonts/Calibre-Regular/Calibre-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Calibre-Regular/Calibre-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Calibre-Regular/Calibre-Bold.woff') format('woff'), /* Modern Browsers */
+       url('fonts/Calibre-Regular/Calibre-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Calibre-Regular/Calibre-Bold.svg#Calibre-Bold') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Calibre-RegularItalic */
+@font-face {
+  font-family: 'Calibre';
+  src: url('fonts/Calibre-Regular/Calibre-RegularItalic.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Calibre-Regular/Calibre-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Calibre-Regular/Calibre-RegularItalic.woff') format('woff'), /* Modern Browsers */
+       url('fonts/Calibre-Regular/Calibre-RegularItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Calibre-Regular/Calibre-RegularItalic.svg#Calibre-RegularItalic') format('svg'); /* Legacy iOS */
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+

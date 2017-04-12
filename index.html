@@ -4,12 +4,15 @@
   <link href='styles.css' rel='stylesheet' />
 </head>
 <body>
+  
+  
+  <div class='theWholeShebang'>
   <div class="card">
     <div class='content'>
       <div class='quoteBar'></div>
       <textarea class='title' placeholder="The quick brown fox jumped over the lazy dog."></textarea>
       <div class='hidden-title'></div>
-      <textarea class='subhed' placeholder="The dog had wearied of chasing foxes and had resigned itself to inevitable sighs of disapproval from humans."></textarea>
+      <textarea class='subhed' placeholder="The dog had wearied of chasing foxes and resigned itself to inevitable sighs of disapproval from humans."></textarea>
       <div class='hidden-subhed'></div>
     </div>
   <?xml version="1.0" encoding="UTF-8"?>
@@ -24,9 +27,14 @@
   </svg>
   
   </div>
-  <div class='download'>Download</div>
-  <input type='checkbox' id='quote' />
-  <label for='quote'>Is this a quote?</label>
+  <div class = "controlTray">
+    <div class='download'>Download</div>
+    <div class='colorTray'></div>
+    <div class='quoteTray'>
+      <input type='checkbox' id='quote' />
+      <label for='quote'>Is this a quote?</label>
+    </div>
+  </div>
   
 </body>
 <script src='bower_components/jquery/dist/jquery.min.js'></script>
