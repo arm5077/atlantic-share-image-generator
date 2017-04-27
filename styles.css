@@ -85,12 +85,12 @@ body {
   vertical-align: top;
 }
 
-.atlantic-a {
+.logo {
   position: absolute;
-  bottom: 5%;
-  right: 5%;
-  height: 90%;
-  opacity: .4;
+  bottom: 4%;
+  right: -11%;
+  height: 70%;
+  opacity: .2;
 }
 
 #quote {

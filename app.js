@@ -1,4 +1,4 @@
-// Color set
+// Color set -- add em here!
 var colors = [
   {
     name: 'purple',
@@ -7,7 +7,7 @@ var colors = [
     'background-image': 'purple.png',
     color: 'rgba(255,255,255,1)',
     'a-color': 'black',
-    'a-opacity': .4
+    'a-opacity': .2
   },
   {
     name: 'red',
@@ -16,7 +16,7 @@ var colors = [
     'background-image': 'red.png',
     color: 'rgba(255,255,255,1)',
     'a-color': '#280000',
-    'a-opacity': .1
+    'a-opacity': .2
   },
   {
     name: 'tan',
@@ -25,7 +25,7 @@ var colors = [
     'background-image': 'tan.png',
     color: 'rgba(0,0,0,.9)',
     'a-color': '#565922',
-    'a-opacity': .1
+    'a-opacity': .2
   }
 ]
 
@@ -44,7 +44,7 @@ colors.forEach(function(color){
         color: color.color 
       })
       
-      $('.atlantic-a').css({
+      $('.logo').css({
         opacity: color['a-opacity'],
         fill: color['a-color']
       })
